@@ -1,8 +1,4 @@
-# INSTALL 
-## yarn 
-# RUN 
-## yarn start 
+# RUN & DEPLOY  
+## $ parcel index.html
 # ENDPOINTS 
-## localhost: 
-# DEPLOY 
-## npm build
+## localhost: 1234
