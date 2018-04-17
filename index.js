@@ -24,11 +24,11 @@ searchForm.addEventListener('submit', e =>{
     // Search API
     reddit.search(searchTerm, searchLimit, sortBy)
         .then(results => {
-        console.log(results)
-        let output = '<div class="card-columns">'
-        // Loop through posts
-        results.forEach(post => {
-            // Check for image
+            console.log(results)
+            let output = '<div class="card-columns">'
+            // Loop through posts
+            results.forEach(post => {
+                // Check for image
             const image = post.preview ? post.preview.images[0].source.url : 'https://cdn.comparitech.com/wp-content/uploads/2017/08/reddit-1.jpg'
 
             output += `
@@ -44,7 +44,7 @@ searchForm.addEventListener('submit', e =>{
                     </div>
                 </div>   
             `
-        })
+            })
             output += '</div>'
             document.getElementById('results').innerHTML = output
     })
